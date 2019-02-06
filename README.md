@@ -7,6 +7,8 @@ setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 # read data csv file
 library("readr")
 
+my_data <- read_csv(file.choose())   ##自己选文件
+
 my_data <- read_csv("R code/antisemitism_07.csv",sep = ";")
 my_data <- read_tsv("mtcars.txt", sep="")
 my_data <- read.table("bloodtype.txt", header=TRUE, sep="")
