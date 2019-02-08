@@ -23,3 +23,7 @@ my_data <- read_excel("my_file.xlsx")
 dim(my.data)
 names(my.data)
 
+
+## 只呈现前十行
+head(my_data, 10)
+
